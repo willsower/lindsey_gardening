@@ -1,35 +1,141 @@
 :root {
-    --primary-color: #0e5e51;
-    --secondary-color: #6bb553;
-    --tercerary-color: #96e242;
+  --primary-color: #0e5e51;
+  --secondary-color: #6bb553;
+  --tercerary-color: #96e242;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .primary-color {
-    color: #0e5e51;
+  color: #0e5e51;
 }
 
 .secondary-color {
-    color: #6bb553;
+  color: #6bb553;
 }
 
 .tercerary-color {
-    color: #96e242;
+  color: #96e242;
+}
+
+.clearfix {
+    clear: both;
 }
 
 /* Nav */
 
 nav {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  height: 60px;
 }
 
 .nav-item {
-    display: inline-block;
+  display: inline-block;
+  margin-top: 17px;
+  margin-right: 20px;
+  float: right;
+  color: #FFF;
 }
 
 /* End of Nav */
 
-/* Home Background */
+/* Home Slideshow */
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    -webkit-clip-path: polygon(0 0, 0 900px, 100% 700px, 100% 0);
+    width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* End of Home Slideshow */
+
+
+/* Responsive */
+
+/* Anything 1200px or smaller */
+@media (max-width: 1200px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 800px, 100% 700px, 100% 0);
+    }
+}
+
+/* Anything 1100px or smaller */
+@media (max-width: 1100px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 650px, 100% 575px, 100% 0);
+    }
+}
+
+/* Anything 1000px or smaller */
+@media (max-width: 1000px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 550px, 100% 475px, 100% 0);
+    }
+}
+
+/* Anything 768px or smaller */
+@media (max-width: 768px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 400px, 100% 350px, 100% 0);
+    }
+}
+
+/* Anything 600px or smaller */
+@media (max-width: 600px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 300px, 100% 250px, 100% 0);
+    }
+}
+
+/* Anything 480px or smaller */
+@media (max-width: 480px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 100px, 100% 50px, 100% 0);
+    }
+}
+
+/* Anything 320px or smaller */
+@media (max-width: 320px) {
+    .mySlides img {
+        -webkit-clip-path: polygon(0 0, 0 100px, 100% 80px, 100% 0);
+    }
+}
+  
