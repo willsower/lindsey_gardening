@@ -156,3 +156,23 @@ nav {
     background: #FFF;
   }
 }
+
+/* sm is 640px */
+@media only screen and (max-width: 768px) {
+  .slideshow-content p { 
+    font-size: 12px;
+  }
+  .slideshow-content h5 {
+    font-size: 25px;
+  }
+
+  .slideshow-buttons .slideshow-button-a { 
+    padding: 15px;
+    font-size: 11px;
+  }
+
+  .slideshow-buttons .slideshow-button-b {
+    padding: 15px;
+    font-size: 11px;
+  }
+}
