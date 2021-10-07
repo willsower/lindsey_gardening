@@ -20,6 +20,18 @@
   color: #96e242;
 }
 
+.bg-primary-color {
+  background-color: #0e5e51;
+}
+
+.bg-secondary-color {
+  background-color: #6bb553;
+}
+
+.bg-tercerary-color {
+  background-color: #96e242;
+}
+
 .clearfix {
   clear: both;
 }
@@ -28,18 +40,7 @@
 
 nav {
   background: linear-gradient(120deg,#fff 50%, var(--secondary-color) 50%);
-  height: 60px;
-}
-
-nav ul {
-  float: right;
-}
-
-.nav-item {
-  display: inline-block;
-  margin-right: 20px;
-  /* float: right; */
-  color: #fff;
+  height: 80px;
 }
 
 /* End of Nav */
@@ -148,3 +149,30 @@ nav ul {
 }
 
 /* End of Home Slideshow */
+
+/* md is 768 */
+@media only screen and (max-width: 768px) {
+  nav {
+    background: #FFF;
+  }
+}
+
+/* sm is 640px */
+@media only screen and (max-width: 768px) {
+  .slideshow-content p { 
+    font-size: 12px;
+  }
+  .slideshow-content h5 {
+    font-size: 25px;
+  }
+
+  .slideshow-buttons .slideshow-button-a { 
+    padding: 15px;
+    font-size: 11px;
+  }
+
+  .slideshow-buttons .slideshow-button-b {
+    padding: 15px;
+    font-size: 11px;
+  }
+}
