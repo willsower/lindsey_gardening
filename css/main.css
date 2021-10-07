@@ -31,6 +31,18 @@ nav {
   height: 60px;
 }
 
+.img {
+
+}
+
+.logo img{
+  float: left;
+}
+
+.logo p {
+
+}
+
 nav ul {
   float: right;
 }
