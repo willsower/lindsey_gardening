@@ -21,7 +21,7 @@
 }
 
 .clearfix {
-    clear: both;
+  clear: both;
 }
 
 /* Nav */
@@ -36,7 +36,7 @@ nav {
   margin-top: 17px;
   margin-right: 20px;
   float: right;
-  color: #FFF;
+  color: #fff;
 }
 
 /* End of Nav */
@@ -44,13 +44,8 @@ nav {
 /* Home Slideshow */
 
 .mySlides {
-    display: none;
-}
-
-.mySlides img {
-    vertical-align: middle;
-    -webkit-clip-path: polygon(0 0, 0 900px, 100% 700px, 100% 0);
-    width: 100%;
+  width: 100%;
+  height: 500px;
 }
 
 /* Slideshow container */
@@ -59,83 +54,10 @@ nav {
   margin: auto;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* End of Home Slideshow */
-
-
-/* Responsive */
-
-/* Anything 1200px or smaller */
-@media (max-width: 1200px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 800px, 100% 700px, 100% 0);
-    }
-}
-
-/* Anything 1100px or smaller */
-@media (max-width: 1100px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 650px, 100% 575px, 100% 0);
-    }
-}
-
-/* Anything 1000px or smaller */
-@media (max-width: 1000px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 550px, 100% 475px, 100% 0);
-    }
-}
-
-/* Anything 768px or smaller */
-@media (max-width: 768px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 400px, 100% 350px, 100% 0);
-    }
-}
-
-/* Anything 600px or smaller */
-@media (max-width: 600px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 300px, 100% 250px, 100% 0);
-    }
-}
-
-/* Anything 480px or smaller */
-@media (max-width: 480px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 100px, 100% 50px, 100% 0);
-    }
-}
-
-/* Anything 320px or smaller */
-@media (max-width: 320px) {
-    .mySlides img {
-        -webkit-clip-path: polygon(0 0, 0 100px, 100% 80px, 100% 0);
-    }
-}
-  
+/* End of slideshow container */
