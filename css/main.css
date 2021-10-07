@@ -27,15 +27,18 @@
 /* Nav */
 
 nav {
-  background-color: var(--secondary-color);
+  background: linear-gradient(120deg,#fff 50%, var(--secondary-color) 50%);
   height: 60px;
+}
+
+nav ul {
+  float: right;
 }
 
 .nav-item {
   display: inline-block;
-  margin-top: 17px;
   margin-right: 20px;
-  float: right;
+  /* float: right; */
   color: #fff;
 }
 
