@@ -168,7 +168,7 @@ nav {
 }
 
 /* xs is 640px */
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 590px) {
   .slideshow-content p { 
     font-size: 12px;
   }
@@ -178,11 +178,16 @@ nav {
 
   .slideshow-buttons .slideshow-button-a { 
     display: block;
+    padding: 12px;
+    width: 150px;
+    margin: auto;
   }
 
   .slideshow-buttons .slideshow-button-b {
     display: block;
+    padding: 12px;
+    width: 150px;
+    margin: auto;
     margin-top: 10px;
-    margin-left: 0px;
   }
 }
