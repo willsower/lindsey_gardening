@@ -165,14 +165,24 @@ nav {
   .slideshow-content h5 {
     font-size: 25px;
   }
+}
+
+/* xs is 640px */
+@media only screen and (max-width: 570px) {
+  .slideshow-content p { 
+    font-size: 12px;
+  }
+  .slideshow-content h5 {
+    font-size: 25px;
+  }
 
   .slideshow-buttons .slideshow-button-a { 
-    padding: 15px;
-    font-size: 11px;
+    display: block;
   }
 
   .slideshow-buttons .slideshow-button-b {
-    padding: 15px;
-    font-size: 11px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 0px;
   }
 }
