@@ -155,6 +155,34 @@ nav {
   nav {
     background: #FFF;
   }
+
+  .responsive {
+    background-color: var(--secondary-color);
+    color: blue;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 15px;
+   }
+
+   .responsive a {
+     display: block;
+     margin: 0;
+     padding: 15px;
+     border-bottom: 1px solid #8bc777;
+   }
+
+   .responsive a:hover {
+     background-color: #8bc777;
+   }
+
+   .button-hover:hover {
+    background-color: #8bc777;
+   }
+
+   .home_resp {
+     margin-top: 280px;
+   }
 }
 
 /* sm is 640px */

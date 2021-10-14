@@ -16,3 +16,18 @@ function showSlides() {
 
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+// End of SlideShow on Home Page
+
+// Navbar Hamburger
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y = document.getElementById("home_section");
+  if (x.className === "myLinks") {
+    x.className += " responsive";
+    y.className += " home_resp";
+  } else {
+    x.className = "myLinks";
+    y.className = "home_section";
+  }
+}
+// End of Navbar Hamburger

@@ -15,14 +15,14 @@
     <title></title>
   </head>
 
-  <body class = "">
+  <body class="">
     <header>
       <nav class="flex items-center justify-between flex-wrap p-3">
         <div class="flex items-center flex-shrink-0 ml-4">
           <img src="/img/temp-img.png" alt="" width="60px" />
           <span class="font-medium text-xl tracking-tight text-gray-700"
-            ><p>Lindsey Gardening &</p>
-            <p>Landscaping</p></span
+            ><p>Lindsey Landscaping &</p>
+            <p>Tree Services</p></span
           >
         </div>
         <div class="block md:hidden">
@@ -38,7 +38,10 @@
               uppercase
               font-semibold
               text-xs
+              focus:outline-none
+              button-hover
             "
+            onclick="myFunction()"
           >
             Menu
             <svg
@@ -51,13 +54,13 @@
             </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow md:flex md:items-center md:w-auto">
+        <div class="w-full md:block md:flex-grow md:flex md:items-center md:w-auto">
           <div class="text-sm md:flex-grow"></div>
-          <div>
+          <div id="myLinks" class="myLinks">
             <a
               href="#"
               class="
-                inline-block
+                md:inline-block
                 text-sm
                 px-2
                 py-2
@@ -71,7 +74,7 @@
             <a
               href="#"
               class="
-                inline-block
+                md:inline-block
                 text-sm
                 px-2
                 py-2
@@ -85,7 +88,7 @@
             <a
               href="#"
               class="
-                inline-block
+                md:inline-block
                 text-sm
                 px-2
                 py-2
@@ -99,7 +102,7 @@
             <a
               href="#"
               class="
-                inline-block
+                md:inline-block
                 text-sm
                 px-2
                 py-2
@@ -113,7 +116,7 @@
             <a
               href="#"
               class="
-                inline-block
+                md:inline-block
                 text-sm
                 px-2
                 py-2
@@ -131,7 +134,7 @@
     </header>
     <main>
       <!-- Home Section -->
-      <section>
+      <section id = "home_section" class = "home_section">
         <div class="slideshow-container bg-gray-100">
           <div class="mySlides fade">
             <img src="/img/examp1.jpg" />
@@ -187,78 +190,148 @@
       <!-- End of Home Section -->
 
       <!-- Services Section -->
-      <section class = "mt-10 md:flex ml-5 mr-5">
+      <section class="mt-10 md:flex ml-5 mr-5">
         <!-- Services We Offer -->
-        <div class = "w-11/12 border-4 border-gray-300 m-auto p-5 md:m-2">
-          <h1 class = "text-3xl font-bold">Services <span class = "secondary-color">We Offer</span></h1>
-          <hr>
-          <p class = "mt-5 text-sm text-gray-600 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, tempora quidem. Iure nostrum laborum ipsa doloribus recusandae dolorem officia itaque repellat molestiae, esse doloremque officiis vero llitia uptate voluptas eius ipsa alias cumque omnis. Iure animi quibusdam ex ullam!</p>
-          <a href="" class = "uppercase text-sm font-bold secondary-color hover:underline">See All Services <span class = "text-base">&#8250;</span></a>
+        <div class="w-11/12 border-4 border-gray-300 m-auto p-5 md:m-2">
+          <h1 class="text-3xl font-bold">
+            Services <span class="secondary-color">We Offer</span>
+          </h1>
+          <hr />
+          <p class="mt-5 text-sm text-gray-600 mb-5">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+            tempora quidem. Iure nostrum laborum ipsa doloribus recusandae
+            dolorem officia itaque repellat molestiae, esse doloremque officiis
+            vero llitia uptate voluptas eius ipsa alias cumque omnis. Iure animi
+            quibusdam ex ullam!
+          </p>
+          <a
+            href=""
+            class="uppercase text-sm font-bold secondary-color hover:underline"
+            >See All Services <span class="text-base">&#8250;</span></a
+          >
         </div>
 
         <!-- Lawn Care Service -->
-        <div class = "w-11/12 m-auto mt-8  md:m-2">
-          <div class = "w-full h-64 md:h-40 lg:h-48">
-            <img src="/img/lawncare_examp.jpg" alt="" class = "w-full h-full object-cover">
+        <div class="w-11/12 m-auto mt-8 md:m-2">
+          <div class="w-full h-64 md:h-40 lg:h-48">
+            <img
+              src="/img/lawncare_examp.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
-          <h4 class = "mt-6 font-bold text-lg">Lawn Care Service</h4>
-          <p class = "mt-4 text-sm text-gray-600 mb-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi explicabo odit voluptatibus maiores accusantium, quasi rerum, quia minima aut nesciunt voluptatem a labore cum ducimus sequi eveniet...
+          <h4 class="mt-6 font-bold text-lg">Lawn Care Service</h4>
+          <p class="mt-4 text-sm text-gray-600 mb-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+            explicabo odit voluptatibus maiores accusantium, quasi rerum, quia
+            minima aut nesciunt voluptatem a labore cum ducimus sequi eveniet...
           </p>
-          <a href="" class = "uppercase text-sm font-bold secondary-color hover:underline">Read More <span class = "text-base">&#8250;</span></a>
+          <a
+            href=""
+            class="uppercase text-sm font-bold secondary-color hover:underline"
+            >Read More <span class="text-base">&#8250;</span></a
+          >
         </div>
 
         <!-- Landscaping -->
-        <div class = "w-11/12 m-auto mt-8   md:m-2">
-          <div class = "w-full h-64 md:h-40 lg:h-48">
-            <img src="/img/landscaping_examp.jpg" alt="" class = "w-full h-full object-cover">
+        <div class="w-11/12 m-auto mt-8 md:m-2">
+          <div class="w-full h-64 md:h-40 lg:h-48">
+            <img
+              src="/img/landscaping_examp.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
-          <h4 class = "mt-6 font-bold text-lg">Landscaping</h4>
-          <p class = "mt-4 text-sm text-gray-600 mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptas tempore accusantium fugit aspernatur placeat amet, maiores molestias excepturi minus! Iusto, perspiciatis...
+          <h4 class="mt-6 font-bold text-lg">Landscaping</h4>
+          <p class="mt-4 text-sm text-gray-600 mb-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            voluptas tempore accusantium fugit aspernatur placeat amet, maiores
+            molestias excepturi minus! Iusto, perspiciatis...
           </p>
-          <a href="" class = "uppercase text-sm font-bold secondary-color hover:underline">Read More <span class = "text-base">&#8250;</span></a>
+          <a
+            href=""
+            class="uppercase text-sm font-bold secondary-color hover:underline"
+            >Read More <span class="text-base">&#8250;</span></a
+          >
         </div>
 
         <!-- Gardening -->
-        <div class = "w-11/12 m-auto mt-8   md:m-2">
-          <div class = "w-full h-64 md:h-40 lg:h-48">
-            <img src="/img/gardening_examp.jpg" alt="" class = "w-full h-full object-cover">
+        <div class="w-11/12 m-auto mt-8 md:m-2">
+          <div class="w-full h-64 md:h-40 lg:h-48">
+            <img
+              src="/img/gardening_examp.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
           </div>
-          <h4 class = "mt-6 font-bold text-lg">Gardening</h4>
-          <p class = "mt-4 text-sm text-gray-600 mb-3">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae porro, necessitatibus ipsum doloribus exercitationem error soluta asperiores nisi placeat...
+          <h4 class="mt-6 font-bold text-lg">Gardening</h4>
+          <p class="mt-4 text-sm text-gray-600 mb-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quae
+            porro, necessitatibus ipsum doloribus exercitationem error soluta
+            asperiores nisi placeat...
           </p>
-          <a href="" class = "uppercase text-sm font-bold secondary-color hover:underline">Read More <span class = "text-base">&#8250;</span></a>
+          <a
+            href=""
+            class="uppercase text-sm font-bold secondary-color hover:underline"
+            >Read More <span class="text-base">&#8250;</span></a
+          >
         </div>
       </section>
       <!-- End of Services Section -->
 
       <!-- About Us -->
-      <section class = "mt-10 sm:flex pl-5 pr-5 pt-12 pb-12 bg-gray-200">
-        <div class = "w-11/12 m-auto sm:m-2">
-          <h1 class = "text-4xl font-bold">About The <span class = "secondary-color">Business</span></h1>
-          <hr class = "border-gray-500">
-          <p class = "mt-5 text-sm text-gray-600 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, tempora quidem. Iure nostrum laborum ipsa doloribus recusandae dolorem officia itaque repellat molestiae, esse doloremque officiis vero llitia uptate voluptas eius ipsa alias cumque omnis. Iure animi quibusdam ex ullam!</p>
-          <p class = "mt-5 text-sm text-gray-600 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi delectus nihil ea odio totam corporis amet, fugiat atque odit.!</p>
-          <p class = "mt-5 text-sm text-gray-600 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam maiores beatae vel minus repudiandae veritatis sapiente consequuntur perspiciatis magnam debitis, odio soluta unde error! Esse unde atque magnam.</p>
-          <a href="" class = "uppercase text-sm font-bold secondary-color hover:underline">More about us <span class = "text-base">&#8250;</span></a>
+      <section class="mt-10 sm:flex pl-5 pr-5 pt-12 pb-12 bg-gray-200">
+        <div class="w-11/12 m-auto sm:m-2">
+          <h1 class="text-4xl font-bold">
+            About The <span class="secondary-color">Business</span>
+          </h1>
+          <hr class="border-gray-500" />
+          <p class="mt-5 text-sm text-gray-600 mb-5">
+            Innovating ideas into reality by servicing installations, designs,
+            and maintaining.
+          </p>
+          <p class="mt-5 text-sm text-gray-600 mb-5">
+            A well designed and maintained landscape builds value around your
+            home and property. Our hardworking skilled landscape professionals
+            can turn any space into something that excels in gorgeous exterior
+            yard service.
+          </p>
+          <p class="mt-5 text-sm text-gray-600 mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A quisquam
+            maiores beatae vel minus repudiandae veritatis sapiente consequuntur
+            perspiciatis magnam debitis, odio soluta unde error! Esse unde atque
+            magnam.
+          </p>
+          <a
+            href=""
+            class="uppercase text-sm font-bold secondary-color hover:underline"
+            >More about us <span class="text-base">&#8250;</span></a
+          >
         </div>
-        <div class = "w-11/12 m-auto p-8 sm:m-2 bg-white shadow-lg">
-          <h1 class = "text-3xl font-bold text-center">Contact <span class = "secondary-color">Us</span></h1>
-          <hr class = "border-gray-500">
-          <div class = "text-center">
-            <img src="/img/phone.png" class = "w-12 m-auto mt-4" alt="">
-            <h6 class = "text-sm font-bold mt-4">Talk to Sales</h6>
-            <p class = "mt-4 text-sm text-gray-600 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A accusantium placeat neque adipisci iste eligendi.</p>
-            <a href = "tel:9034865224" class = "text-sm hover:underline secondary-color">+1 (903) 486-5224</a>
+        <div class="w-11/12 m-auto p-8 mt-8 sm:m-2 bg-white shadow-lg">
+          <h1 class="text-3xl font-bold text-center">
+            Contact <span class="secondary-color">Us</span>
+          </h1>
+          <hr class="border-gray-500" />
+          <div class="text-center">
+            <img src="/img/phone.png" class="w-12 m-auto mt-4" alt="" />
+            <h6 class="text-sm font-bold mt-4">Talk to Sales</h6>
+            <p class="mt-4 text-sm text-gray-600 mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. A
+              accusantium placeat neque adipisci iste eligendi.
+            </p>
+            <a
+              href="tel:9034865224"
+              class="text-sm hover:underline secondary-color"
+              >+1 (903) 486-5224</a
+            >
           </div>
         </div>
       </section>
       <!-- End of About -->
     </main>
     <footer>
-      <p class = "text-center p-4">&copy; All rights reserved, 2021</p>
+      <p class="text-center p-4">&copy; All rights reserved, 2021</p>
     </footer>
   </body>
 
