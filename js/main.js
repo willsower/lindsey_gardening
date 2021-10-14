@@ -20,12 +20,14 @@ function showSlides() {
 
 // Navbar Hamburger
 function myFunction() {
-  console.log("CLICK");
   var x = document.getElementById("myLinks");
+  var y = document.getElementById("home_section");
   if (x.className === "myLinks") {
     x.className += " responsive";
+    y.className += " home_resp";
   } else {
     x.className = "myLinks";
+    y.className = "home_section";
   }
 }
 // End of Navbar Hamburger
