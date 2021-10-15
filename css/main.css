@@ -150,6 +150,12 @@ nav {
 
 /* End of Home Slideshow */
 
+/* About Page */
+.exp-width {
+  width: 400px;
+}
+/* End of About Page */
+
 /* md is 768 */
 @media only screen and (max-width: 768px) {
   nav {
